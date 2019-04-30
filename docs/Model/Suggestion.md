@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **okpo** | **string** | ОКПО | [optional] 
 **ogrn** | **string** | ОГРН | [optional] 
 **name** | **string** | Наименование компании одной строкой (полное) unrestrictedValue | [optional] 
-**legal_address** | **string** | Адрес организации одной строкой. | [optional] 
+**legal_address** | **string** | Адрес организации одной строкой | [optional] 
 **registration_date** | **string** | Дата регистрации в формате Y-m-d | [optional] 
 **director_full_name** | **string** | Должность руководителя | [optional] 
 **contact_phones** | **string[]** |  | [optional] 
