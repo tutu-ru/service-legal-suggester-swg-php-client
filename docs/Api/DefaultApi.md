@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**legalSuggesterServiceSuggestionsSearchGet**](DefaultApi.md#legalSuggesterServiceSuggestionsSearchGet) | **GET** /legal_suggester_service/suggestions/search | Поиск юр. лиц
 
 # **legalSuggesterServiceSuggestionsSearchGet**
-> \TutuRu\LegalSuggesterClient\Model\Suggestion legalSuggesterServiceSuggestionsSearchGet($query, $count)
+> \TutuRu\LegalSuggesterClient\Model\Suggestion[] legalSuggesterServiceSuggestionsSearchGet($query, $count)
 
 Поиск юр. лиц
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\TutuRu\LegalSuggesterClient\Model\Suggestion**](../Model/Suggestion.md)
+[**\TutuRu\LegalSuggesterClient\Model\Suggestion[]**](../Model/Suggestion.md)
 
 ### Authorization
 

@@ -112,7 +112,7 @@ class DefaultApi implements LoggerAwareInterface, StatsdExporterAwareInterface
      *
      * @throws \TutuRu\LegalSuggesterClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \TutuRu\LegalSuggesterClient\Model\Suggestion
+     * @return \TutuRu\LegalSuggesterClient\Model\Suggestion[]
      */
     public function legalSuggesterServiceSuggestionsSearchGet($query, $count)
     {
@@ -130,14 +130,14 @@ class DefaultApi implements LoggerAwareInterface, StatsdExporterAwareInterface
      *
      * @throws \TutuRu\LegalSuggesterClient\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \TutuRu\LegalSuggesterClient\Model\Suggestion, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \TutuRu\LegalSuggesterClient\Model\Suggestion[], HTTP status code, HTTP response headers (array of strings)
      */
     public function legalSuggesterServiceSuggestionsSearchGetWithHttpInfo($query, $count)
     {
         $dataCollector = new QueryMetricCollector(Configuration::getServiceName(), 'legalSuggesterServiceSuggestionsSearchGet', QueryMetricCollector::QUERY_TYPE_SYNC);
         $dataCollector->startTiming();
 
-        $returnType = '\TutuRu\LegalSuggesterClient\Model\Suggestion';
+        $returnType = '\TutuRu\LegalSuggesterClient\Model\Suggestion[]';
         $request = $this->legalSuggesterServiceSuggestionsSearchGetRequest($query, $count);
 
         $debugOutput = null;
@@ -233,7 +233,7 @@ class DefaultApi implements LoggerAwareInterface, StatsdExporterAwareInterface
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $content,
-                        '\TutuRu\LegalSuggesterClient\Model\Suggestion',
+                        '\TutuRu\LegalSuggesterClient\Model\Suggestion[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -319,7 +319,7 @@ class DefaultApi implements LoggerAwareInterface, StatsdExporterAwareInterface
         $dataCollector = new QueryMetricCollector(Configuration::getServiceName(), 'legalSuggesterServiceSuggestionsSearchGet', QueryMetricCollector::QUERY_TYPE_ASYNC);
         $dataCollector->startTiming();
 
-        $returnType = '\TutuRu\LegalSuggesterClient\Model\Suggestion';
+        $returnType = '\TutuRu\LegalSuggesterClient\Model\Suggestion[]';
         $request = $this->legalSuggesterServiceSuggestionsSearchGetRequest($query, $count);
 
         return $this->client
