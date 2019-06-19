@@ -159,8 +159,9 @@ class DefaultApi implements LoggerAwareInterface, StatsdExporterAwareInterface
                 }
                 $response = $this->client->send($request, $options);
             } catch (RequestException $e) {
+                $message = $e->getResponse() ? $e->getResponse()->getBody()->getContents() : $e->getMessage();
                 throw new ApiException(
-                    "[{$e->getCode()}] {$e->getMessage()}",
+                    "[{$e->getCode()}] {$message}",
                     $e->getCode(),
                     $e->getResponse() ? $e->getResponse()->getHeaders() : null,
                     $e->getResponse() ? $e->getResponse()->getBody()->getContents() : null
