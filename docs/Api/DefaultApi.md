@@ -4,14 +4,14 @@ All URIs are relative to */*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**legalSuggesterServiceSuggestionsSearchGet**](DefaultApi.md#legalSuggesterServiceSuggestionsSearchGet) | **GET** /legal_suggester_service/suggestions/search | search suggestions by query
+[**legalSuggesterServiceSuggestionsSearchGet**](DefaultApi.md#legalSuggesterServiceSuggestionsSearchGet) | **GET** /legal_suggester_service/suggestions/search | Поиск юр. лиц
 
 # **legalSuggesterServiceSuggestionsSearchGet**
 > \TutuRu\LegalSuggesterClient\Model\Suggestion[] legalSuggesterServiceSuggestionsSearchGet($query, $count)
 
-search suggestions by query
+Поиск юр. лиц
 
-Request search suggestions
+Поиск юр. лиц
 
 ### Example
 ```php
@@ -24,7 +24,7 @@ $apiInstance = new TutuRu\LegalSuggesterClient\Api\DefaultApi(
     new GuzzleHttp\Client()
 );
 $query = "query_example"; // string | Запрос, для которого нужно получить подсказки
-$count = 56; // int | Максимальное кол-во найденных совпадений
+$count = "count_example"; // string | Максимальное кол-во найденных совпадений
 
 try {
     $result = $apiInstance->legalSuggesterServiceSuggestionsSearchGet($query, $count);
@@ -40,7 +40,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **string**| Запрос, для которого нужно получить подсказки |
- **count** | **int**| Максимальное кол-во найденных совпадений |
+ **count** | **string**| Максимальное кол-во найденных совпадений |
 
 ### Return type
 
