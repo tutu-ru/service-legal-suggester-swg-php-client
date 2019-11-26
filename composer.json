@@ -22,7 +22,7 @@
         "tutu-ru/lib-config": "^2.0",
         "tutu-ru/lib-request-metadata": "^1.0",
         "tutu-ru/lib-http-request-metadata": "^1.0",
-        "tutu-ru/lib-metrics": "^2.1",
+        "tutu-ru/lib-metrics": "^2.5.1",
         "guzzlehttp/guzzle": "^6.2",
         "psr/log": "^1.0",
         "php": "^7.1"

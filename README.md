@@ -19,8 +19,8 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 {
   "repositories": [
     {
-      "type": "git",
-      "url": "https://github.com/tutu-ru/lib-legalsuggesterclient.git"
+      "type": "composer",
+      "url": "https://stash.tutu.ru/rest/composer/latest/"
     }
   ],
   "require": {
