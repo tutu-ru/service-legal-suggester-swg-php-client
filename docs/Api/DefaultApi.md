@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 Поиск юр. лиц
 
-Поиск юр. лиц
+Поиск юр. лиц.
 
 ### Example
 ```php
