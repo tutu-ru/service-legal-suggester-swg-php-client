@@ -30,6 +30,9 @@
     "require-dev": {
         "phpunit/phpunit": "^7.5"
     },
+    "conflict": {
+        "tutu/libraries-statsd": "<12.31"
+    },
     "autoload": {
         "psr-4": { "TutuRu\\LegalSuggesterClient\\" : "lib/" }
     },
