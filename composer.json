@@ -1,0 +1,42 @@
+{
+    "name": "tutu-ru/lib-legalsuggesterclient",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "description": "",
+    "keywords": [
+        "swagger",
+        "php",
+        "sdk",
+        "api"
+    ],
+    "homepage": "http://swagger.io",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Swagger and contributors",
+            "homepage": "https://github.com/swagger-api/swagger-codegen"
+        }
+    ],
+    "require": {
+        "tutu-ru/lib-host-alias-resolver": "^1.0",
+        "tutu-ru/lib-config": "^2.0",
+        "tutu-ru/lib-request-metadata": "^1.0",
+        "tutu-ru/lib-http-request-metadata": "^1.0",
+        "tutu-ru/lib-metrics": "^2.5.1",
+        "guzzlehttp/guzzle": "^6.2",
+        "psr/log": "^1.0",
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "conflict": {
+        "tutu/libraries-statsd": "<12.31"
+    },
+    "autoload": {
+        "psr-4": { "TutuRu\\LegalSuggesterClient\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "TutuRu\\LegalSuggesterClient\\" : "test/" }
+    }
+}
