@@ -73,6 +73,23 @@ try {
 ?>
 ```
 
+### Using environment variables
+It is available to use the environment variables to configure your client. Just like in go-lang clients.
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$apiInstance = TutuRu\LegalSuggesterClient\Api\DefaultApi::fromEnv();
+```
+
+EnvConfiguration supports these variables:
+* ```LEGALSUGGESTER_HOST``` - the service's host, without a scheme.
+* ```LEGALSUGGESTER_HOST_SCHEME``` - the preferred scheme, if isn't specified, http will be used.
+* ```LEGALSUGGESTER_READ_TIMEOUT``` - how long the client will wait the response from the server. In the golang's time interval format, eg. 5s, 300ms, etc.
+* ```LEGALSUGGESTER_CONNECT_TIMEOUT``` - how long the client will wait the connection to be established. In the golang's time interval format too.
+* ```DEBUG``` - is the debugging enabled.
+
 ## Documentation for API Endpoints
 
 All URIs are relative to */*
